@@ -1,4 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
 body {
     background-color: red;
-    color: white;
+    display: block;
+    margin: 0px;
+}
+h1 {
+    color: gold;
+    font-family: 'Unbounded';
+    font-size: 5rem;
+    text-align: center;
+}
+
+.realm {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#shy {
+    opacity: 0;
+    position:absolute;
+    z-index: 3;
+    width: 11rem;
+    height: 10rem;
+    transform: translateX(-105%);
+    animation: shy 30s 20s;
+}
+
+
+@keyframes shy {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#flame {
+    opacity: 0;
+    position:absolute;
+    z-index: 2;
+    width: 5rem;
+    height: 5rem;
+    margin-inline-end: 23rem;
+    margin-block-start: 26rem;
+    transform: rotate(80deg);
+    animation: flame 30s 18s ease-in-out;
+}
+
+@keyframes flame {
+    0% {
+        opacity: 1;
+        transform:scale(0.5);
+        transform: rotate(80deg);
+    }
+    50% {
+        transform: scale(1);
+        transform: rotate(80deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(0.6);
+        transform: rotate(80deg);
+    }
+}
+
+#flamethrow {
+    opacity: 0;
+    position:absolute;
+    z-index: 2;
+    width: 5rem;
+    height: 5rem;
+    margin-inline-end: -11rem;
+    margin-block-start: 0rem;
+    transform: rotate(100deg);
+    animation: flame-throw 2s 16s ease-out;
+}
+
+@keyframes flame-throw {
+    0% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-310%, 250%);
+        opacity: 0;
+    }
+}
+
+
+
+#oeil {
+    position: relative;
+    height: 30rem;
+    width: 25rem;
+    animation: move-tower 2s;
+}
+
+@keyframes move-tower {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+#gandalf {
+    opacity: 0;
+    position: relative;
+    height: 20rem;
+    width: 15rem;
+    animation: gandalf-move 15s 2.5s ease-in-out;
+}
+
+@keyframes gandalf-move {
+    0% {
+        transform: translateX(500%);
+    }
+    15% {
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(3%);
+    }
+    22% {
+        transform: translateY(-1%);
+    }
+    28% {
+        transform: translateY(3%);
+    }
+    30% {
+        transform: translateY(-1%);
+    }
+    35% {
+        transform: translateX(500%)
+    }
+    45% {
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(400%);
+    }
+}
+
+ #frodon {
+    opacity: 0;
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+    transform: translateY(40%);
+    animation: frodon-move 14s 8.5s ease-in-out;
+}
+
+@keyframes frodon-move {
+    0% {
+        transform: translateX(600%);
+    }
+    1% {
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(3%);
+    }
+    25% {
+        transform: translateY(-1%);
+    }
+    30% {
+        transform: translateY(3%);
+    }
+    35% {
+        transform: translateY(-1%);
+    }
+    90% {
+        transform: translateX(300%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(400%);
+    }
+
+}
+
+#legolas {
+    opacity: 0;
+    position: relative;
+    height: 25rem;
+    width: 15rem;
+    transform: translateY(40%);
+    animation: legolas-move 14s 8.5s ease-in-out;
+}
+
+@keyframes legolas-move {
+    0% {
+        transform: translateX(700%);
+    }
+    1% {
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(3%);
+    }
+    25% {
+        transform: translateY(-1%);
+    }
+    30% {
+        transform: translateY(3%);
+    }
+    35% {
+        transform: translateY(-1%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(300%);
+    }
+
+}
+
+#balrog {
+    position: fixed;
+    opacity: 0;
+    margin-inline-start: 14rem;
+    height: 30rem;
+    width: 25rem;
+    animation: balrog-move 4s 14s;
+}
+
+@keyframes balrog-move {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(300%);
+    }
+}
+
+
+#sapin {
+    position:relative;
+    opacity: 0;
+    height: 20rem;
+    width: 17rem;
+    animation: sapin-move 30s 21s;
+}
+
+@keyframes sapin-move {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
